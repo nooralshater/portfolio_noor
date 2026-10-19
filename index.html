@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Alshater | Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Noor Eyad Alshater, cybersecurity graduate focused on security operations and penetration testing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="blue">
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Noor Alshater">
+      <span class="brand-mark">NA</span>
+      <span class="brand-name">Noor Alshater</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+      <a href="#hobbies" data-i18n="nav.hobbies">Hobbies</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="tool-btn" id="themeBtn" type="button" aria-label="Change theme">
+        <span class="swatch" aria-hidden="true"></span>
+        <span data-i18n="ui.theme">Theme</span>
+      </button>
+      <button class="tool-btn" id="langBtn" type="button" aria-label="Switch language">
+        <span id="langLabel">العربية</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app">
+
+    <!-- ============ HOME ============ -->
+    <section class="panel hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Cybersecurity | SOC &amp; Penetration Testing</span></p>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">SECURE</span>
+          <span class="grad" data-i18n="hero.title2">FUTURES</span>
+        </h1>
+        <p class="role-line"><span class="role-prefix" data-i18n="hero.iam">Focused on</span> <span class="role-rotate" id="roleText">SOC &amp; Security Monitoring</span></p>
+        <p class="hero-sub" data-i18n="hero.sub">I investigate security events, test defenses and turn findings into clear remediation steps.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects"><span data-i18n="hero.btnProjects">View Projects</span><span class="arrow" aria-hidden="true">&#8599;</span></a>
+          <a class="btn ghost" href="assets/Noor_Alshater_CV.pdf" download><span data-i18n="hero.btnCv">Download CV</span></a>
+        </div>
+        <ul class="stats">
+          <li><strong>200h</strong><span data-i18n="stats.training">National training</span></li>
+          <li><strong>1.7M+</strong><span data-i18n="stats.views">Content views</span></li>
+          <li><strong>9</strong><span data-i18n="stats.projects">Projects &amp; reports</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait">
+          <span class="ring ring-a" aria-hidden="true"></span>
+          <span class="ring ring-b" aria-hidden="true"></span>
+          <img id="heroPhoto" src="assets/noor-formal.jpg" width="1000" height="1500" alt="Noor Alshater in a formal black blazer" data-i18n-alt="alt.formal">
+        </div>
+        <div class="id-card">
+          <strong data-i18n="card.name">Noor Eyad Alshater</strong>
+          <span data-i18n="card.role">Cybersecurity | SOC &amp; Penetration Testing</span>
+          <span data-i18n="card.place">Amman, Jordan</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="panel" id="about">
+      <div class="section-head">
+        <p class="kicker">01</p>
+        <h2 data-i18n="about.title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body">
+          <p class="lead" data-i18n="about.p1">Cybersecurity professional with over one year of combined hands-on experience across national cybersecurity training, SOC simulations, security investigations, technical projects and cybersecurity lab development.</p>
+          <p data-i18n="about.p2">I work with SIEM monitoring, alert triage, log analysis, threat hunting, penetration testing, malware analysis and digital forensics, and I document every investigation with clear findings and remediation recommendations.</p>
+          <dl class="facts">
+            <div><dt data-i18n="about.eduK">Education</dt><dd data-i18n="about.eduV">B.Sc. Cybersecurity, Tafila Technical University (2022 - 2026)</dd></div>
+            <div><dt data-i18n="about.gpaK">GPA</dt><dd data-i18n="about.gpaV">81.07 / 100, Very Good</dd></div>
+            <div><dt data-i18n="about.locK">Location</dt><dd data-i18n="about.locV">Amman, Jordan, open to relocation</dd></div>
+            <div><dt data-i18n="about.langK">Languages</dt><dd data-i18n="about.langV">Arabic (native), English (B2)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="panel" id="skills">
+      <div class="section-head">
+        <p class="kicker">02</p>
+        <h2 data-i18n="skills.title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3 data-i18n="skills.soc">Security Operations</h3>
+          <ul class="chips"><li>SIEM Monitoring</li><li>Splunk</li><li>Alert Triage</li><li>Log Analysis</li><li>Threat Hunting</li><li>Incident Investigation</li><li>IOC Identification</li><li>Incident Reporting</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.frame">Security Frameworks</h3>
+          <ul class="chips"><li>MITRE ATT&amp;CK</li><li>Incident Response Fundamentals</li><li>Evidence Handling</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.pentest">Penetration Testing</h3>
+          <ul class="chips"><li>Nmap</li><li>Nessus</li><li>Nikto</li><li>Metasploit</li><li>Burp Suite</li><li>Hydra</li><li>John the Ripper</li><li>Web Application Security</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.malware">Malware &amp; Digital Forensics</h3>
+          <ul class="chips"><li>Static &amp; Dynamic Malware Analysis</li><li>Immunity Debugger</li><li>IDA Free</li><li>FTK Imager</li><li>Autopsy</li><li>ExifTool</li><li>Evidence Collection</li><li>File Hashing</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.network">Network Security</h3>
+          <ul class="chips"><li>Wireshark</li><li>Network Traffic Analysis</li><li>Network Scanning</li><li>Cisco Networking Fundamentals</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.systems">Systems &amp; Scripting</h3>
+          <ul class="chips"><li>Kali Linux</li><li>Windows</li><li>Linux CLI</li><li>VirtualBox</li><li>Bash</li><li>Python</li><li>Pandas</li></ul>
+        </article>
+        <article class="skill-card">
+          <h3 data-i18n="skills.risk">Risk &amp; Reporting</h3>
+          <ul class="chips"><li>Vulnerability Assessment</li><li>Risk Assessment</li><li>Security Reporting</li><li>Remediation Recommendations</li><li>GRC Fundamentals</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (visual gallery, built by script.js) ============ -->
+    <section class="panel" id="projects">
+      <div class="section-head">
+        <p class="kicker">03</p>
+        <h2 data-i18n="projects.title">Selected Works</h2>
+      </div>
+      <p class="proj-intro" data-i18n="projects.intro">Each project starts with a real security problem. Open a card to see the goal, the approach and what it achieved.</p>
+
+      <div class="filters" role="group" aria-label="Project filters">
+        <button class="chip-btn is-active" type="button" data-filter="all" data-i18n="projects.all">All</button>
+        <button class="chip-btn" type="button" data-filter="infra" data-i18n="projects.fInfra">Labs &amp; Infrastructure</button>
+        <button class="chip-btn" type="button" data-filter="forensics" data-i18n="projects.fForensics">Forensics</button>
+        <button class="chip-btn" type="button" data-filter="risk" data-i18n="projects.fRisk">Risk &amp; Data</button>
+        <button class="chip-btn" type="button" data-filter="research" data-i18n="projects.fResearch">Research</button>
+        <button class="chip-btn" type="button" data-filter="web" data-i18n="projects.fWeb">Web</button>
+      </div>
+
+      <div class="pg-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="panel" id="experience">
+      <div class="section-head">
+        <p class="kicker">04</p>
+        <h2 data-i18n="exp.title">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="when">10/2026 - <span data-i18n="exp.present">Present</span></span>
+          <h3 data-i18n="exp.e0.role">Cybersecurity Training</h3>
+          <p class="org">Amman 42</p>
+          <p data-i18n="exp.e0.desc">Ongoing practical training in web application vulnerability identification and analysis, Linux command-line operations and cryptography, alongside web development exercises.</p>
+        </li>
+        <li>
+          <span class="when">06/2026 - <span data-i18n="exp.present">Present</span></span>
+          <h3 data-i18n="exp.e1.role">Cisco Networking Instructor</h3>
+          <p class="org">ByTeq Academy</p>
+          <p data-i18n="exp.e1.desc">Deliver the Cisco NetAcad Networking Basics course through structured video lessons aligned with the official curriculum, turning technical networking concepts into clear, practical explanations that support comprehension and exam readiness.</p>
+        </li>
+        <li>
+          <span class="when">07/2025 - 09/2025</span>
+          <h3 data-i18n="exp.e2.role">Masar Cybersecurity Training, Ethical Hacking &amp; CTF Track</h3>
+          <p class="org">National Cybersecurity Center &amp; IT Security C&amp;T, Jordan</p>
+          <p data-i18n="exp.e2.desc">200 hours of Splunk SIEM monitoring and log analysis of simulated brute-force, XSS and command-injection activity, alert triage and IOC identification, MITRE ATT&amp;CK threat hunting, penetration testing, malware analysis and structured security reports with severity ratings and remediation advice.</p>
+        </li>
+        <li>
+          <span class="when">07/2023 - 07/2026</span>
+          <h3 data-i18n="exp.e4.role">Public Relations Officer</h3>
+          <p class="org">IEEE Cybersecurity Society, Tafila Technical University</p>
+          <p data-i18n="exp.e4.desc">Organized cybersecurity workshops, awareness events and technical sessions, and managed digital content that reached over 1.7M views in under one month.</p>
+        </li>
+        <li>
+          <span class="when" data-i18n="exp.e3.when">Side project</span>
+          <h3 data-i18n="exp.e3.role">AI Content Creation</h3>
+          <p class="org">Noor Stories</p>
+          <p data-i18n="exp.e3.desc">Created animated story videos using AI-assisted scripts, images, voice and video editing. Some videos reached over one million views.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section class="panel" id="certificates">
+      <div class="section-head">
+        <p class="kicker">05</p>
+        <h2 data-i18n="cert.title">Certificates</h2>
+      </div>
+      <div class="cert-wrap">
+        <div class="cert-thumb" id="certThumb" role="button" tabindex="0" aria-label="Open certificate">
+          <img src="assets/certificate-masar.png" width="936" height="662" loading="lazy" alt="Masar Cybersecurity Training certificate issued by the National Cybersecurity Center">
+        </div>
+        <div class="cert-info">
+          <h3 data-i18n="cert.name">Masar Cybersecurity Training</h3>
+          <p class="org" data-i18n="cert.issuer">National Cybersecurity Center &amp; IT Security C&amp;T</p>
+          <p data-i18n="cert.desc">Completed 200 hours of continuous training over 6 weeks in 2025, covering ethical hacking and CTF challenges.</p>
+          <p class="hint" data-i18n="cert.hint">Click the certificate to view it larger.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOBBIES ============ -->
+    <section class="panel" id="hobbies">
+      <div class="section-head">
+        <p class="kicker">06</p>
+        <h2 data-i18n="hob.title">Hobbies &amp; Interests</h2>
+      </div>
+      <div class="hobby-grid">
+        <article class="hobby-card"><span class="icon" aria-hidden="true">&#9873;</span><h3 data-i18n="hob.h1">Capture The Flag</h3><p data-i18n="hob.d1">Solving CTF challenges to sharpen my offensive and investigative thinking.</p></article>
+        <article class="hobby-card"><span class="icon" aria-hidden="true">&#9881;</span><h3 data-i18n="hob.h2">Building Home Labs</h3><p data-i18n="hob.d2">Spinning up virtual machines to test tools and break things safely.</p></article>
+        <article class="hobby-card"><span class="icon" aria-hidden="true">&#9998;</span><h3 data-i18n="hob.h3">Content Creation</h3><p data-i18n="hob.d3">Designing and sharing digital content that makes security approachable.</p></article>
+        <article class="hobby-card"><span class="icon" aria-hidden="true">&#9733;</span><h3 data-i18n="hob.h4">Teaching &amp; Events</h3><p data-i18n="hob.d4">Explaining networking and organizing workshops for my community.</p></article>
+        <article class="hobby-card"><span class="icon" aria-hidden="true">&#9654;</span><h3 data-i18n="hob.h5">AI Content Creation</h3><p data-i18n="hob.d5">I create animated stories using AI tools, from writing scripts to images, voice and editing.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="panel" id="contact">
+      <div class="section-head">
+        <p class="kicker">07</p>
+        <h2 data-i18n="contact.title">Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p data-i18n="contact.sub">I am open to internships and junior roles in security operations and penetration testing. Send me a message and I will reply soon.</p>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.email">Email</span><a href="mailto:nooralshate@gmail.com">nooralshate@gmail.com</a></li>
+            <li><span data-i18n="contact.phone">Phone</span><a href="tel:+962789868444" dir="ltr">+962 789 868 444</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/noor-alshater-443866316" target="_blank" rel="noopener noreferrer">linkedin.com/in/noor-alshater</a></li>
+            <li><span data-i18n="contact.loc">Location</span><b data-i18n="card.place">Amman, Jordan</b></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <label>
+            <span data-i18n="form.name">Name</span>
+            <input type="text" id="fName" name="name" autocomplete="name" minlength="2" required>
+          </label>
+          <label>
+            <span data-i18n="form.email">Email</span>
+            <input type="email" id="fEmail" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span data-i18n="form.message">Message</span>
+            <textarea id="fMsg" name="message" rows="5" minlength="10" required></textarea>
+          </label>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <button class="btn primary" type="submit"><span data-i18n="form.send">Send Message</span><span class="arrow" aria-hidden="true">&#8599;</span></button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="pModal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+      <button class="modal-close" id="pmClose" type="button" aria-label="Close">&times;</button>
+      <div class="pm-media">
+        <div class="pm-tabs" id="pmTabs" hidden></div>
+        <div class="pm-stage" id="pmStage"></div>
+        <div class="pm-thumbs" id="pmThumbs"></div>
+      </div>
+      <div class="pm-body" id="pmBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Noor Eyad Alshater. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <div class="footer-links">
+      <a href="mailto:nooralshate@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/noor-alshater-443866316" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/nooralshater" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
